@@ -52,6 +52,8 @@ header{
     left:0;
     width: 250px;
     height: 100%;
+    transition: 0.5s;
+    transition-property: left;
 }
 
 .sidebar .profile_image{
@@ -76,7 +78,7 @@ header{
     padding-left: 40px;
     box-sizing: border-box;
     transition: 0.5s;
-    transition-property:background;
+    transition-property: background;
 }
 
 .sidebar a:hover{
@@ -95,4 +97,24 @@ label #sidebar_btn{
     left:300px;
     font-size: 20px;
     margin:5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover{
+    color:#256f7e;
+}
+
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+
+#check:checked ~.sidebar a{
+    font-size: 20px;
+    margin-left:170px;
+    width: 80px;
 }
