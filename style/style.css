@@ -45,7 +45,7 @@ header{
 }
 
 .sidebar{
-    background: #2F323A;
+    background: #282d3b;
     margin-top:70px;
     padding-top:30px;
     position: fixed;
@@ -125,10 +125,11 @@ label #sidebar_btn:hover{
 
 .content{
     margin-left: 250px;
-    background: url(background.jpg) no-repeat;
+    background: url(background.png);
     background-position:center;
     background-size: cover;
     height:100vh;
+    width:100vh;
 }
 
 #check{
